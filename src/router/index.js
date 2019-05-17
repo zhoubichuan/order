@@ -1,21 +1,33 @@
-import Vue from 'vue'
-import Router from 'vue-router'
+import Vue from 'vue';
+import Router from 'vue-router';
+import Login from '@/components/Login';
+import Table from '@/components/Table';
+import Custominfo from '@/components/Custominfo';
+import Menu from '@/components/Menu';
 
-import LOGIN from '@/components/Login'
-import TABLE from '@/components/Table'
 Vue.use(Router)
 
 export default new Router({
   routes: [
     {
-      path: '/login',
+      path: '/',
       name: 'Login',
-      component: LOGIN
+      component: Login
     },
     {
       path: '/table',
       name: 'Table',
-      component: TABLE
+      component: Table
+    },
+    {
+      path: '/custominfo',
+      name: 'Custominfo',
+      component: Custominfo
+    },
+    {
+      path: '/menu',
+      name: 'Menu',
+      component: Menu
     }
   ]
 })
