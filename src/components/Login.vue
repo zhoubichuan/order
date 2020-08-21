@@ -2,34 +2,39 @@
   <div>
     <header class="header">登录</header>
     <ul class="ul">
-      <User :user="username" @childuserchange="parentuserchange"></User>
-      <Pass :pass="password" @childpasschange="parentpasschange"></Pass>
-      <Save :save="autosave" @childsavechange="parentsavechange"></Save>
+      <User :user="username"
+            @childuserchange="parentuserchange"></User>
+      <Pass :pass="password"
+            @childpasschange="parentpasschange"></Pass>
+      <Save :save="autosave"
+            @childsavechange="parentsavechange"></Save>
     </ul>
-    <div class="btn_box"><a href="#" class="btn_login" @click="login">登录</a></div>
+    <div class="btn_box"><a href="#"
+         class="btn_login"
+         @click="login">登录</a></div>
   </div>
 </template>
 
 <script>
-import Vue from 'vue';
+import Vue from 'vue'
 //  import axios from 'axios'
 //  import vueAxios from 'vue-axios'
 //  axios.defaults.baseURL = 'http://192.168.3.111:8080/'
 //  axios.defaults.headers.post['Content-Type'] = 'application/x-www-form-urlencoded'
 //  Vue.use(axios, vueAxios)
-import axios from 'axios';
-import VueAxios from 'vue-axios';
-axios.defaults.baseURL = 'http://192.168.3.111:8080/';
-axios.defaults.headers.common['Authorization'] = '';
+import axios from 'axios'
+import VueAxios from 'vue-axios'
+axios.defaults.baseURL = 'http://192.168.3.111:8080/'
+axios.defaults.headers.common['Authorization'] = ''
 axios.defaults.headers.post['Content-Type'] =
-  'application/x-www-form-urlencoded';
+  'application/x-www-form-urlencoded'
 Vue.use(VueAxios, axios)
 
-import User from '@/components/login/user';
-import Pass from '@/components/login/pass';
-import Save from '@/components/login/save';
-import Url from '@/common/url';
-import { setCookie, delCookie, getCookie } from '@/common/comm';
+import User from '@/components/login/user'
+import Pass from '@/components/login/pass'
+import Save from '@/components/login/save'
+import Url from '@/common/url'
+import { setCookie, delCookie, getCookie } from '@/common/comm'
 export default {
   name: 'Login',
   data () {
@@ -64,8 +69,8 @@ export default {
             'memberName',
             resp.data.responseBody.memberName
           )
-          //跳转到餐台 页面
-          location.href = '#/table';
+          // 跳转到餐台 页面
+          location.href = '#/table'
         } else {
           alert('登录失败')
         }
