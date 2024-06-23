@@ -4,7 +4,7 @@
 npm run build:prod
 
 # 2.进入打包目录
-cd dist
+cd order
 
 # 3.发布到gh-pages分支
 git init

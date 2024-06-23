@@ -15,7 +15,7 @@
 import Vue from 'vue';
 import axios from 'axios';
 import VueAxios from 'vue-axios';
-axios.defaults.baseURL = 'http://192.168.3.111:8080/';
+axios.defaults.baseURL = '';
 axios.defaults.headers.common['Authorization'] = '';
 axios.defaults.headers.post['Content-Type'] =
   'application/x-www-form-urlencoded';
@@ -57,7 +57,7 @@ export default {
       pm.append('memberId', sessionStorage.getItem('memberId'))
       pm.append('memberName', sessionStorage.getItem('memberName'))
 
-      this.axios.post(Url.addCustomerInfo, pm).then(resp => {
+      this.axios.get(Url.addCustomerInfo, pm).then(resp => {
         if (resp.data.errCode == '000') {
           location.href = '#/menu';
         } else {

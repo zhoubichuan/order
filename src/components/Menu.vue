@@ -70,7 +70,7 @@
 import Vue from 'vue';
 import axios from 'axios';
 import VueAxios from 'vue-axios';
-axios.defaults.baseURL = 'http://192.168.3.111:8080/';
+axios.defaults.baseURL = '';
 axios.defaults.headers.common['Authorization'] = '';
 axios.defaults.headers.post['Content-Type'] =
   'application/x-www-form-urlencoded';
@@ -94,7 +94,7 @@ export default {
     let pm = new URLSearchParams()
     pm.append('deskId', sessionStorage.getItem('deskId'))
     //请求接口
-    this.axios.post(Url.qryMenuClassList, pm).then(resp => {
+    this.axios.get(Url.qryMenuClassList, pm).then(resp => {
       this.menuClassList = resp.data.responseBody.menuClassList
       //生成激活状态数组
       this.changeClass(0)
@@ -129,7 +129,7 @@ export default {
       pm.append('pageIndex', 1)
       pm.append('pageSize', 1000)
 
-      this.axios.post(Url.qryMenuListByDesk, pm).then(resp => {
+      this.axios.get(Url.qryMenuListByDesk, pm).then(resp => {
         if (resp.data.errCode == '000') {
           this.menuList = resp.data.responseBody.menuList
         } else {

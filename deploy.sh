@@ -15,7 +15,7 @@ git push origin master
 npm run build:prod
 
 # 3.进入打包目录
-cd dist
+cd order
 
 # 4.发布到gh-pages分支
 git init

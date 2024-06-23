@@ -1,0 +1,80 @@
+{
+  "statusCode": 200,
+  "success": true,
+  "result": {
+    "deskTopList": [
+      {
+        "deskStatus": 2,
+        "totalAmount": "1",
+        "deskCaption": "ASDF",
+        "createTime": "ASDFASD"
+      },
+      {
+        "deskStatus": 2,
+        "totalAmount": "2",
+        "deskCaption": "ASDF",
+        "createTime": "ASDFASD"
+      },
+      {
+        "deskStatus": 1,
+        "totalAmount": "3",
+        "deskCaption": "ASDF",
+        "createTime": "ASDFASD"
+      },
+      {
+        "deskStatus": 2,
+        "totalAmount": "4",
+        "deskCaption": "ASDF",
+        "createTime": "ASDFASD"
+      },
+      {
+        "deskStatus": 2,
+        "totalAmount": "5",
+        "deskCaption": "ASDF",
+        "createTime": "ASDFASD"
+      },
+      {
+        "deskStatus": 2,
+        "totalAmount": "6",
+        "deskCaption": "ASDF",
+        "createTime": "ASDFASD"
+      },
+      {
+        "deskStatus": 2,
+        "totalAmount": "7",
+        "deskCaption": "ASDF",
+        "createTime": "ASDFASD"
+      },
+      {
+        "deskStatus": 2,
+        "totalAmount": "8",
+        "deskCaption": "ASDF",
+        "createTime": "ASDFASD"
+      },
+      {
+        "deskStatus": 2,
+        "totalAmount": "9",
+        "deskCaption": "ASDF",
+        "createTime": "ASDFASD"
+      },
+      {
+        "deskStatus": 2,
+        "totalAmount": "10",
+        "deskCaption": "ASDF",
+        "createTime": "ASDFASD"
+      },
+      {
+        "deskStatus": 2,
+        "totalAmount": "11",
+        "deskCaption": "ASDF",
+        "createTime": "ASDFASD"
+      },
+      {
+        "deskStatus": 2,
+        "totalAmount": "12",
+        "deskCaption": "ASDF",
+        "createTime": "ASDFASD"
+      }
+    ]
+  }
+}

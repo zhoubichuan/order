@@ -8,6 +8,7 @@ import Menu from '@/components/Menu';
 Vue.use(Router)
 
 export default new Router({
+  base: '/order/',
   routes: [
     {
       path: '/',
