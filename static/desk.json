@@ -1,0 +1,11 @@
+{
+    "statusCode": 200,
+    "success": true,
+    "result": {
+      "deskAreaList": [{
+        "deskAreaId":1,
+        "deskAreaCaption":"asdfasd"
+      }]
+    }
+  }
+  
